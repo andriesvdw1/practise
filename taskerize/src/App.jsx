@@ -19,6 +19,9 @@ function App() {
   function handleReset(){
     setcount(0);
   }
+  function handleDelete(id){
+    setTasks(tasks.filter(task => task.id !== id));
+  }
   const username= "Andries";
   return (
     <React.Fragment>
@@ -34,10 +37,10 @@ function App() {
       <p className='active'>{username}</p>
       <h1>Task List ToDo:</h1>
       <ul>
-        { tasks.map(({id, name, completed}) => (
-          <li key={id}>
-            <span>{id} - {name}</span>
-            <button>Remove task</button>
+        { tasks.map((task) => (
+          <li key={task.id}>
+            <span>{task.id} - {task.name}</span>
+            <button onClick={() => handleDelete(task.id)}>Remove task</button>
           </li>
         )) }
       </ul>
