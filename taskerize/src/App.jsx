@@ -8,8 +8,10 @@ function App() {
   const [tasks, setTasks] = useState([{id: 1, name:"learn components", completed: true},
     {id: 2, name:"learn about dynamic content", completed: true},
     {id: 3, name:"learn about state", completed: true},
-    {id: 4, name:"learn about other React hooks", completed: false}  
+    {id: 4, name:"learn about other React hooks", completed: false}, 
+    {id: 5, name:"learn conditional templates", completed: false},  
   ]);
+  const [show, setShow] = useState(true);
   function handleAdd(){
     setcount(count + 1);
   }
@@ -37,8 +39,9 @@ function App() {
       <p className='active'>{username}</p>
       <h1>Task List ToDo:</h1>
       <ul>
-        { tasks.map((task) => (
-          <li key={task.id}>
+       <button className='trigger' onClick={() => setShow(!show)}>Toggle show todo list</button> 
+      { show && tasks.map((task) => (
+          <li key={task.id} className={task.completed ? "done" : "pending"}>
             <span>{task.id} - {task.name}</span>
             <button onClick={() => handleDelete(task.id)}>Remove task</button>
           </li>

@@ -8,3 +8,10 @@
 .subtract{
     background-color: red;
 }
+
+.done{
+    color:green;
+}
+.pending{
+    color:orange;
+}
