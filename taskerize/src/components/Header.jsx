@@ -1,8 +1,9 @@
-
+import Logo from "../assets/logo.gif"
 
 function Header() {
   return (
-    <div>Header</div>
+    <img className="logo" src={Logo} alt="picture of logo" />
+    
   )
 }
 
