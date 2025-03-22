@@ -1,0 +1,22 @@
+.box_success{
+    background-color: greenyellow;
+    border-radius: 15px;
+    align-content: center;
+    width: 30%;
+    margin: 0 auto
+}
+
+.box_warning{
+    background-color: orange;
+    border-radius: 15px;
+    align-content: center;
+    width: 30%;
+    margin: 0 auto
+}
+.box_alert{
+    background-color: red;
+    border-radius: 15px;
+    align-content: center;
+    width: 30%;
+    margin: 0 auto
+}
