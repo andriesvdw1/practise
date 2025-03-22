@@ -1,7 +1,7 @@
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <footer className="footer">2025 &copy;</footer>
   )
 }
 

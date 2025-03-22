@@ -26,7 +26,7 @@ function TaskList(props) {
   }
   const username= "Andries";
   return (
-    <>
+    <section className='tasklist'>
     <div className='App'>
         <div className="box">
           <p>The current count is: {count}</p>
@@ -57,7 +57,7 @@ function TaskList(props) {
         <p className="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium!</p>
         <p className="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, neque?</p>
       </BoxCard>
-      </>
+      </section>
   )
 }
 
