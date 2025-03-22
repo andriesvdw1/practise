@@ -9,7 +9,7 @@ function App() {
   return (
     <React.Fragment>
       <Header/>
-      <TaskList/>
+      <TaskList title="Random" subtitle="subtitle"/>
       <Footer/>
     </React.Fragment>
   )

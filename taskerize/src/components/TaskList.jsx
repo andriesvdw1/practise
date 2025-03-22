@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-function TaskList() {
+function TaskList(props) {
     const [count, setcount] = useState(0);
   const [tasks, setTasks] = useState([{id: 1, name:"learn components", completed: true},
     {id: 2, name:"learn about dynamic content", completed: true},
@@ -33,7 +33,7 @@ function TaskList() {
         </div>
       </div>
       <p className='active'>{username}</p>
-      <h1>Task List ToDo:</h1>
+      <h1>Task List ToDo: {props.title} {props.subtitle}</h1>
       <ul>
        <button className='trigger' onClick={() => setShow(!show)}>Toggle show todo list</button> 
       { show && tasks.map((task) => (
