@@ -54,3 +54,9 @@ tasklist{
     margin: 0 auto;
     align-items: center;
 }
+
+.trigger{
+    background-color: yellow;
+    border-radius: 15px;
+    font-size: 12pt;
+}
