@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import TaskCard from './TaskCard';
 function TaskList(props) {
     const [count, setcount] = useState(0);
   const [tasks, setTasks] = useState([{id: 1, name:"learn components", completed: true},
@@ -37,10 +38,7 @@ function TaskList(props) {
       <ul>
        <button className='trigger' onClick={() => setShow(!show)}>Toggle show todo list</button> 
       { show && tasks.map((task) => (
-          <li key={task.id} className={task.completed ? "done" : "pending"}>
-            <span>{task.id} - {task.name}</span>
-            <button onClick={() => handleDelete(task.id)}>Remove task</button>
-          </li>
+          <TaskCard key={task.id} task={task} handleDelete={handleDelete}/>
         )) }
       </ul>
       </>
