@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import TaskCard from './TaskCard';
 import './TaskList.css';
+import BoxCard from './BoxCard';
 function TaskList(props) {
     const [count, setcount] = useState(0);
   const [tasks, setTasks] = useState([{id: 1, name:"learn components", completed: true},
@@ -42,18 +43,20 @@ function TaskList(props) {
           <TaskCard key={task.id} task={task} handleDelete={handleDelete}/>
         )) }
       </ul>
-      <div className="box_success">
-        <p className="title">Lorem ipsum dolor sit amet.</p>
+      <BoxCard result="success">
+      <p className="title">Lorem ipsum dolor sit amet.</p>
         <p className="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, neque?</p>
-      </div>
-      <div className="box_warning">
-        <p className="title">Lorem ipsum dolor sit amet.</p>
+      
+      </BoxCard>
+      
+      <BoxCard result ="warning">
+        <p className="title">Lorem ipsum dolor sit amet consectetur.</p>
         <p className="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, neque?</p>
-      </div>
-      <div className="box_alert">
-        <p className="title">Lorem ipsum dolor sit amet.</p>
+      </BoxCard>
+      <BoxCard result ="alert">
+        <p className="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium!</p>
         <p className="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, neque?</p>
-      </div>
+      </BoxCard>
       </>
   )
 }
