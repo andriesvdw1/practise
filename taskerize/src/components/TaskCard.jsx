@@ -1,9 +1,15 @@
 import React from "react";
 import '../index.css';
+import './TaskCard.css';
 
 function TaskCard({ task, handleDelete }) {
   return (
     <table>
+      <tr>
+      <th>Task</th>
+      <th>Action</th>      
+      </tr>
+      
       <tr>
         <td width={400}>
           <span className="task-card-details">
