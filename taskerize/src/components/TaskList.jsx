@@ -45,19 +45,19 @@ function TaskList(props) {
       </ul>
       
       <BoxCard result="success">
-      <h2>Warnings/ Messages:</h2>
-      <p className="title">Lorem ipsum dolor sit amet.</p>
-        <p className="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, neque?</p>
+      <h2 className='h2_success'>Warnings/ Messages:</h2>
+      <p className="p_success">Lorem ipsum dolor sit amet.</p>
+        <p className="p_success">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, neque?</p>
       
       </BoxCard>
       
       <BoxCard result ="warning">
-        <p className="title">Lorem ipsum dolor sit amet consectetur.</p>
-        <p className="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, neque?</p>
+        <p className="p_warning">Lorem ipsum dolor sit amet consectetur.</p>
+        <p className="p_warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, neque?</p>
       </BoxCard>
       <BoxCard result ="alert">
-        <p className="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium!</p>
-        <p className="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, neque?</p>
+        <p className="p_alert">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium!</p>
+        <p className="p_alert">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, neque?</p>
       </BoxCard>
       </section>
   )

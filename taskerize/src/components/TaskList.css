@@ -7,8 +7,6 @@ div .box_success{
     padding: 10px;
 }
 
-
-
 .box_warning{
     background-color: orange;
     border-radius: 15px;
@@ -17,6 +15,7 @@ div .box_success{
     margin: 0 auto;
     padding: 10px;
 }
+
 .box_alert{
     background-color: red;
     border-radius: 15px;
@@ -59,4 +58,14 @@ tasklist{
     background-color: yellow;
     border-radius: 15px;
     font-size: 12pt;
+}
+.h2_success, .p_success{
+    background-color: greenyellow;
+}
+.h2_warning, .p_warning{
+    background-color: orange;
+}
+
+.h2_alert, .p_alert{
+    background-color: red;
 }

@@ -4,7 +4,7 @@ import './TaskCard.css';
 
 function TaskCard({ task, handleDelete }) {
   return (
-    <table>
+    <table style={{borderWidth: "thin", border: "black", borderStyle:"solid"}}>
       <tr>
       <th>Task</th>
       <th>Action</th>      
