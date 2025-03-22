@@ -43,7 +43,9 @@ function TaskList(props) {
           <TaskCard key={task.id} task={task} handleDelete={handleDelete}/>
         )) }
       </ul>
+      
       <BoxCard result="success">
+      <h2>Warnings/ Messages:</h2>
       <p className="title">Lorem ipsum dolor sit amet.</p>
         <p className="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, neque?</p>
       

@@ -1,14 +1,25 @@
 import React from "react";
 import '../index.css';
 
-function TaskCard({task, handleDelete}) {
+function TaskCard({ task, handleDelete }) {
   return (
-    <li className={task.completed ? "done" : "pending"}>
-      <span>
-        {task.id} - {task.name}
-      </span>
-      <button onClick={() => handleDelete(task.id)}>Remove task</button>
-    </li>
+    <table>
+      <tr>
+        <td width={400}>
+          <span className="task-card-details">
+            {task.id} - {task.name}
+          </span>
+        </td>
+        
+        <td className="task-card-button-col">
+          <button
+            className="task-card-button"
+            onClick={() => handleDelete(task.id)}
+          >Remove task
+          </button>
+        </td>
+      </tr>
+    </table>
   );
 }
 

@@ -1,4 +1,4 @@
-.box_success{
+div .box_success{
     background-color: greenyellow;
     border-radius: 15px;
     align-content: center;
@@ -6,6 +6,8 @@
     margin: 0 auto;
     padding: 10px;
 }
+
+
 
 .box_warning{
     background-color: orange;
